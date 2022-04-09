@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #112D4E;
+    padding: 5%;
+}
+
+@media screen and (max-width: 430px){
+    main {
+        padding: 10px;
+        height: 100vh;
+    }
+}
+
+main {
+    background-color: #CBF1F5;
+    height: 500px;
+    max-width: 900px;
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+/* Intro-Container */
+.intro-container > h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* Dice-Section */
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 1.75rem;
+    margin: 30px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f8ff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice:focus {
+    background-color: #71C9CE;
+}
+
+.dice-num {
+    font-size: 1.75rem;
+}
+
+.roll-button {
+    height: 50px;
+    width: 160px;
+    background-color: #A6E3E9;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.roll-button:hover {
+    background-color: #71C9CE;
+}
+
+.roll-button:focus {
+    outline: none;
+}
+
+/* Buttom-Container */
+.buttom-container {
+    align-self: flex-start;
+    margin-left: 13%;
+}
